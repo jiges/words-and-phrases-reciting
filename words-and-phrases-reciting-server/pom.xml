@@ -39,6 +39,13 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!--添加数据类型转换器，实现DTO和DO之间的相互转换-->
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
