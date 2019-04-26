@@ -27,7 +27,9 @@ public class UserServiceImplTest {
                 .wxId("LoisDUIFdsDSDGFGX-DHJNe")
                 .build();
 
-        System.out.println(userService.saveUser(userDO).toString());
+        System.out.println("保存结果：" + userService.save(userDO).toString());
+        System.out.println("用户数量：" + userService.count());
+        System.out.println("所有用户：" + userService.findAll());
 
     }
 }

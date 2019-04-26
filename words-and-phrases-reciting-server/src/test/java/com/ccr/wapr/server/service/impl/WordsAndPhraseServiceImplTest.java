@@ -41,6 +41,6 @@ public class WordsAndPhraseServiceImplTest {
                 .phrases(Collections.singletonList("Consider static factory methods instead of constructors"))
                 .phraseTranslation(Collections.singletonList("考虑使用静态工厂方法代替构造器"))
                 .build();
-        System.out.println(wordsAndPhraseService.saveWordsAndPhrase(wordsAndPhraseDO));
+        System.out.println(wordsAndPhraseService.save(wordsAndPhraseDO));
     }
 }

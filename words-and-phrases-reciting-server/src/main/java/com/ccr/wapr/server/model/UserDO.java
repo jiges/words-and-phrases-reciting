@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * 用户数据
@@ -14,12 +16,14 @@ import org.springframework.data.annotation.Id;
 @Builder
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Document(collection = "user")
 public class UserDO {
 
     @Id
     private String id;
 
     @EqualsAndHashCode.Include
+    @Indexed
     private String wxId;
 
     private String userName;
