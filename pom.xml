@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>words-and-phrases-reciting-api</module>
+        <module>words-and-phrases-reciting-server</module>
     </modules>
     <!--替代Parent的方式-->
     <dependencyManagement>
