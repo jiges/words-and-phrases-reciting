@@ -2,8 +2,12 @@ package com.ccr.wapr.server.service.impl;
 
 import com.ccr.wapr.server.service.CrudService;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.util.Streamable;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public abstract class AbstractCrudService<T,ID> implements CrudService<T,ID>{
 
@@ -15,8 +19,12 @@ public abstract class AbstractCrudService<T,ID> implements CrudService<T,ID>{
     }
 
     @Override
-    public <S extends T> Iterable<S> saveAll(Iterable<S> entities) {
-        return repository.saveAll(entities);
+    public <S extends T> List<S> saveAll(Iterable<S> entities) {
+        Iterable<S> result = repository.saveAll(entities);
+        if (null == result) {
+            return Collections.emptyList();
+        }
+        return Streamable.of(result).stream().collect(Collectors.toList());
     }
 
     @Override
@@ -30,13 +38,21 @@ public abstract class AbstractCrudService<T,ID> implements CrudService<T,ID>{
     }
 
     @Override
-    public Iterable<T> findAll() {
-        return repository.findAll();
+    public List<T> findAll() {
+        Iterable<T> result = repository.findAll();
+        if (null == result) {
+            return Collections.emptyList();
+        }
+        return Streamable.of(result).stream().collect(Collectors.toList());
     }
 
     @Override
-    public Iterable<T> findAllById(Iterable<ID> ids) {
-        return repository.findAllById(ids);
+    public List<T> findAllById(Iterable<ID> ids) {
+        Iterable<T> result = repository.findAllById(ids);
+        if (null == result) {
+            return Collections.emptyList();
+        }
+        return Streamable.of(result).stream().collect(Collectors.toList());
     }
 
     @Override

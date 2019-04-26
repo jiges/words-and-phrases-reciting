@@ -1,5 +1,6 @@
 package com.ccr.wapr.server.service;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -20,7 +21,7 @@ public interface CrudService<T,ID> {
      * @param entities 实体
      * @return 保存后的实体
      */
-    <S extends T> Iterable<S> saveAll(Iterable<S> entities);
+    <S extends T> List<S> saveAll(Iterable<S> entities);
 
     /**
      * findById
@@ -40,14 +41,14 @@ public interface CrudService<T,ID> {
      * 检索所有的实体
      * @return 所有实体
      */
-    Iterable<T> findAll();
+    List<T> findAll();
 
     /**
      * 根据Id集合检索
      * @param ids id集合
      * @return 满足条件的所有实体
      */
-    Iterable<T> findAllById(Iterable<ID> ids);
+    List<T> findAllById(Iterable<ID> ids);
 
     /**
      * 统计实体个数
