@@ -21,4 +21,9 @@ public class UserServiceImpl extends AbstractCrudService<UserDO,String> implemen
     public void afterPropertiesSet() throws Exception {
         super.setRepository(userRepository);
     }
+
+    @Override
+    public void deleteById(String id) {
+        userRepository.deleteById(id);
+    }
 }

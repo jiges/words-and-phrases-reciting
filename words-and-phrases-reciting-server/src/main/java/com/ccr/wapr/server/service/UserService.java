@@ -7,4 +7,10 @@ import com.ccr.wapr.server.model.UserDO;
  */
 public interface UserService extends CrudService<UserDO,String> {
 
+    /**
+     * 根据Id删除
+     * @param id id
+     */
+    void deleteById(String id);
+
 }
