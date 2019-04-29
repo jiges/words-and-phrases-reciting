@@ -1,8 +1,8 @@
-package com.ccr.wapr.server.controller;
+package com.ccr.wapr.server.user.controller;
 
 import com.ccr.wapr.api.dto.UserDTO;
-import com.ccr.wapr.server.model.UserDO;
-import com.ccr.wapr.server.service.UserService;
+import com.ccr.wapr.server.user.model.UserDO;
+import com.ccr.wapr.server.user.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.modelmapper.ModelMapper;

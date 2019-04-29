@@ -1,8 +1,9 @@
-package com.ccr.wapr.server.service.impl;
+package com.ccr.wapr.server.word.service.impl;
 
-import com.ccr.wapr.server.model.WordsAndPhraseDO;
-import com.ccr.wapr.server.repository.WordRepository;
-import com.ccr.wapr.server.service.WordsAndPhraseService;
+import com.ccr.wapr.server.word.model.WordsAndPhraseDO;
+import com.ccr.wapr.server.common.service.impl.AbstractCrudService;
+import com.ccr.wapr.server.word.repository.WordRepository;
+import com.ccr.wapr.server.word.service.WordsAndPhraseService;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

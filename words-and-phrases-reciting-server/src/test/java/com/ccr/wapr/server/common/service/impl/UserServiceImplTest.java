@@ -1,14 +1,12 @@
-package com.ccr.wapr.server.service.impl;
+package com.ccr.wapr.server.common.service.impl;
 
-import com.ccr.wapr.server.model.UserDO;
-import com.ccr.wapr.server.service.UserService;
+import com.ccr.wapr.server.user.model.UserDO;
+import com.ccr.wapr.server.user.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import static org.junit.Assert.*;
 
 /**
  * @author ccr12312@163.com at 2019-4-25

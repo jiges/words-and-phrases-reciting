@@ -1,4 +1,4 @@
-package com.ccr.wapr.server.service;
+package com.ccr.wapr.server.common.service;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,6 +1,6 @@
-package com.ccr.wapr.server.service.impl;
+package com.ccr.wapr.server.common.service.impl;
 
-import com.ccr.wapr.server.service.CrudService;
+import com.ccr.wapr.server.common.service.CrudService;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.util.Streamable;
 

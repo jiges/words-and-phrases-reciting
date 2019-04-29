@@ -1,6 +1,6 @@
-package com.ccr.wapr.server.repository;
+package com.ccr.wapr.server.user.repository;
 
-import com.ccr.wapr.server.model.UserDO;
+import com.ccr.wapr.server.user.model.UserDO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

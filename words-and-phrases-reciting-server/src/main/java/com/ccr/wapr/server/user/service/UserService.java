@@ -1,6 +1,7 @@
-package com.ccr.wapr.server.service;
+package com.ccr.wapr.server.user.service;
 
-import com.ccr.wapr.server.model.UserDO;
+import com.ccr.wapr.server.common.service.CrudService;
+import com.ccr.wapr.server.user.model.UserDO;
 
 /**
  * @author ccr12312@163.com at 2019-4-25

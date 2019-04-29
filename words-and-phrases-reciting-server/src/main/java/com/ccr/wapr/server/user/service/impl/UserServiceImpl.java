@@ -1,8 +1,9 @@
-package com.ccr.wapr.server.service.impl;
+package com.ccr.wapr.server.user.service.impl;
 
-import com.ccr.wapr.server.model.UserDO;
-import com.ccr.wapr.server.repository.UserRepository;
-import com.ccr.wapr.server.service.UserService;
+import com.ccr.wapr.server.common.service.impl.AbstractCrudService;
+import com.ccr.wapr.server.user.model.UserDO;
+import com.ccr.wapr.server.user.repository.UserRepository;
+import com.ccr.wapr.server.user.service.UserService;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

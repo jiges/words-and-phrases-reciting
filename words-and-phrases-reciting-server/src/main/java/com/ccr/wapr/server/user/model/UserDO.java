@@ -1,4 +1,4 @@
-package com.ccr.wapr.server.model;
+package com.ccr.wapr.server.user.model;
 
 import lombok.Builder;
 import lombok.Data;

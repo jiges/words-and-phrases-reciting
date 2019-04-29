@@ -1,21 +1,17 @@
-package com.ccr.wapr.server.service.impl;
+package com.ccr.wapr.server.common.service.impl;
 
-import com.ccr.wapr.server.model.UserDO;
-import com.ccr.wapr.server.model.WordsAndPhraseDO;
-import com.ccr.wapr.server.repository.UserRepository;
-import com.ccr.wapr.server.service.WordsAndPhraseService;
+import com.ccr.wapr.server.user.model.UserDO;
+import com.ccr.wapr.server.word.model.WordsAndPhraseDO;
+import com.ccr.wapr.server.user.repository.UserRepository;
+import com.ccr.wapr.server.word.service.WordsAndPhraseService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Example;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.util.CollectionUtils;
 
-import java.util.Arrays;
 import java.util.Collections;
-
-import static org.junit.Assert.*;
 
 /**
  * @author ccr12312@163.com at 2019-4-25

@@ -1,5 +1,6 @@
-package com.ccr.wapr.server.model;
+package com.ccr.wapr.server.word.model;
 
+import com.ccr.wapr.server.user.model.UserDO;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

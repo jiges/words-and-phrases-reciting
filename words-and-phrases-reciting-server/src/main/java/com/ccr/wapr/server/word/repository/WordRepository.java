@@ -1,6 +1,6 @@
-package com.ccr.wapr.server.repository;
+package com.ccr.wapr.server.word.repository;
 
-import com.ccr.wapr.server.model.WordsAndPhraseDO;
+import com.ccr.wapr.server.word.model.WordsAndPhraseDO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
