@@ -11,6 +11,7 @@
     <modules>
         <module>words-and-phrases-reciting-api</module>
         <module>words-and-phrases-reciting-server</module>
+        <module>words-and-phrases-reciting-client</module>
     </modules>
     <!--替代Parent的方式-->
     <dependencyManagement>
